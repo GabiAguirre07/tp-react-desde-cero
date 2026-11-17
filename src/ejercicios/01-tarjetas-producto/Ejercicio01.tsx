@@ -7,7 +7,7 @@ import "./styles.css";
  * Renderiza el componente reutilizable `Producto` tres veces con datos
  * distintos, uno de ellos sin stock.
  */
-export function Ejericio1() {
+export function Ejercicio1() {
   return (
     <section>
       <h2>Ejercicio 1: Tarjetas de Producto</h2>
