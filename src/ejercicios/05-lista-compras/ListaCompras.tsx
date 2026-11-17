@@ -112,7 +112,7 @@ export function ListaCompras() {
               key={item.id}
               nombre={item.nombre}
               onEliminar={() => handleEliminar(item.id)}
-            ></ItemLista>
+            />
           ))}
         </ul>
       )}
