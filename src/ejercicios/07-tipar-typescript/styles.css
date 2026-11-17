@@ -1,0 +1,48 @@
+/* ===== Ejercicio 07 · Tipar con TypeScript ===== */
+/* Mismo diseño de tarjeta que el Ejercicio 1, con prefijo propio. */
+
+.tipado-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.tipado-tarjeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 0 1 14rem;
+  padding: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  background-color: rgb(235, 234, 234);
+}
+
+.tipado-nombre {
+  margin: 0;
+  font-weight: bolder;
+  color: black;
+}
+
+.tipado-oferta {
+  margin: 0;
+  font-weight: bold;
+  color: #c2410c;
+}
+
+.tipado-precio {
+  margin: 0;
+  font-weight: bold;
+  color: rgb(2, 90, 2);
+}
+
+.tipado-stock {
+  margin: 0;
+  font-weight: bold;
+  color: rgb(21, 21, 143);
+}
+
+/* Modificador: el producto no tiene unidades disponibles */
+.tipado-stock-agotado {
+  color: #475569;
+}

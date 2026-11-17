@@ -4,6 +4,7 @@ import { Ejercicio3 } from "./ejercicios/03-mostrar-ocultar/Ejercicio03";
 import { Ejercicio4 } from "./ejercicios/04-conversor-temperatura/Ejercicio04";
 import { Ejercicio5 } from "./ejercicios/05-lista-compras/Ejercicio05";
 import { Ejercicio6 } from "./ejercicios/06-buscador/Ejercicio06";
+import { Ejercicio7 } from "./ejercicios/07-tipar-typescript/Ejercicio07";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
       <Ejercicio4 />
       <Ejercicio5 />
       <Ejercicio6 />
+      <Ejercicio7 />
     </main>
   );
 }
