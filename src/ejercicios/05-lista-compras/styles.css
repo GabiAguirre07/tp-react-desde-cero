@@ -1,0 +1,98 @@
+/* ===== Ejercicio 05 · Lista de compras ===== */
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  max-width: 360px;
+  padding: 1rem 1.1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.lista-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.lista-etiqueta {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.lista-fila {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lista-input {
+  width: 180px;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #1f2937;
+  transition: border-color 0.15s ease;
+}
+
+.lista-input:focus-visible {
+  outline: 2px solid #0e7490;
+  outline-offset: 2px;
+  border-color: #0e7490;
+}
+
+/* Botón base: lo comparten "Agregar" y "Eliminar" */
+.lista-boton {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #0e7490;
+  border-radius: 6px;
+  background-color: #d6f1f7;
+  color: #1f2937;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.lista-boton:hover:not(:disabled) {
+  background-color: #bfe7f1;
+}
+
+.lista-boton:focus-visible {
+  outline: 2px solid #0e7490;
+  outline-offset: 2px;
+}
+
+.lista-boton:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Modificador de variante: botón compacto dentro de cada ítem */
+.lista-boton-eliminar {
+  margin-left: 0.5rem;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.75rem;
+}
+
+.lista-items {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: #1f2937;
+}
+
+.lista-item + .lista-item {
+  margin-top: 0.4rem;
+}
+
+.lista-vacia {
+  margin: 0;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #6b7280;
+}
