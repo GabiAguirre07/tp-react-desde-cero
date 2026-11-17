@@ -1,0 +1,65 @@
+/* ===== Ejercicio 06 · Buscador ===== */
+
+.buscador {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  max-width: 360px;
+  padding: 1rem 1.1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.buscador-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.buscador-etiqueta {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.buscador-input {
+  width: 200px;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #1f2937;
+  appearance: none;
+  transition: border-color 0.15s ease;
+}
+
+.buscador-input:focus-visible {
+  outline: 2px solid #0e7490;
+  outline-offset: 2px;
+  border-color: #0e7490;
+}
+
+.buscador-contador {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #4b5563;
+  font-variant-numeric: tabular-nums;
+  transition: color 0.15s ease;
+}
+
+/* Modificador: la búsqueda no coincide con ningún lenguaje */
+.buscador-contador-vacio {
+  color: #c2410c;
+}
+
+.buscador-resultados {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: #1f2937;
+}
+
+.buscador-item + .buscador-item {
+  margin-top: 0.35rem;
+}
