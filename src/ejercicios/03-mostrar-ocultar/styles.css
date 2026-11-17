@@ -1,0 +1,53 @@
+/* ===== Ejercicio 03 · Mostrar y ocultar ===== */
+
+.pregunta-tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  max-width: 360px;
+  padding: 1rem 1.1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease;
+}
+
+/* Modificador: la tarjeta con la respuesta visible */
+.pregunta-tarjeta-abierta {
+  border-color: #0e7490;
+}
+
+.pregunta-titulo {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.pregunta-boton {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #0e7490;
+  border-radius: 6px;
+  background-color: #d6f1f7;
+  color: #1f2937;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.pregunta-boton:hover {
+  background-color: #bfe7f1;
+}
+
+.pregunta-boton:focus-visible {
+  outline: 2px solid #0e7490;
+  outline-offset: 2px;
+}
+
+.pregunta-respuesta {
+  margin: 0;
+  line-height: 1.5;
+  color: #374151;
+}
