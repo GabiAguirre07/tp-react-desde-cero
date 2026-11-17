@@ -1,0 +1,37 @@
+.producto-contenedor {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.producto-tarjeta {
+  border: solid 1px #cbd5e1;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  flex: 0 1 14rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: rgb(235, 234, 234);
+}
+
+.producto-nombre {
+  margin: 0;
+  font-weight: bolder;
+  color: black;
+}
+
+.producto-precio {
+  margin: 0;
+  color: rgb(2, 90, 2);
+  font-weight: bold;
+}
+
+.producto-stock {
+  margin: 0;
+  color: rgb(21, 21, 143);
+  font-weight: bold;
+}
+
+.producto-stock-agotado {
+  color: #475569;
+}
